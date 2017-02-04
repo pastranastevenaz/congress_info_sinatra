@@ -18,7 +18,8 @@ ctd = currentTimeDay.to_s
 
 date_stamp = cty+" "+ctm+" "+ctd
 puts date_stamp
-File.open('current.json', 'w'){ |f|
+
+File.open('current_house.json', 'ab'){ |f|
 	f.write(
 	# date_stamp + "\n" +
 	response.body)}
