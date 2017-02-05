@@ -15,7 +15,7 @@
 <li><strike>Add Column headers to CSV file</strike></li>
 <li>Create seperate files for Senate and House</li>
 <li>Name output files with date created</li>
-<li>reate cron jubs for creating JSON files</li>
+<li>Create cron jobs for creating JSON files</li>
 <li>Create cron jubs for creating CSV files</li>
 <li>Find optimal delivery or download solution (option list below)</li>
 <li>Upload to server</li>

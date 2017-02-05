@@ -6,7 +6,7 @@ require 'curb'
 require 'curb-fu'
 
 #Open file
-json_file = File.read('current.json')
+json_file = File.read('app/house_bills/temp/current_house.json')
 #Parse data from file in variable
 json_hash = JSON.parse(json_file)
 
@@ -205,7 +205,7 @@ latest_major_action_array = [latest_major_action0,latest_major_action1,latest_ma
 ####################################
 data_headers = ['number', 'title', 'introduced date', 'sponsor', 'cosponsors', 'committees', 'latest action day', 'latest action']
 data_table = [num_array, title_array, introduced_date_array,sponsor_array, cosponsors_array, committees_array, latest_major_action_date_array, latest_major_action_array].transpose
-CSV.open('current_house.csv', 'ab') do |csv|
+CSV.open('app/house_bills/public/current_house.csv', 'ab') do |csv|
 	csv << data_headers
 	data_table.each do |row|
     csv << row

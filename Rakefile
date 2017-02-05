@@ -8,6 +8,6 @@ task :main do
   ruby 'app/house_bills/house_bills.rb'
   # Run the curl commands
   # sleep 1
-  ## Run the convert files
-  # ruby 'app/house_bills/convert_house_bills.rb'
+  # Run the convert files
+  ruby 'app/house_bills/convert_house_bills.rb'
 end
