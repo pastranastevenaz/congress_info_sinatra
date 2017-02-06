@@ -12,14 +12,14 @@ json_hash = JSON.parse(json_file)
 
 ##################################################
 #  FIND MEMBER AND ASSIGN LAST AND FIRST TO VAR  #
-##################################################
-member_response = CurbFu.get(:url => 'https://api.propublica.org/congress/v1/members/C001068.json',
-					  :headers => {'X-API-Key' => '0G65D2vjkSrMYjh3NQSk9dZ235c2yVZ1gBtxUHVf'})
-member_hash = JSON.parse(member_response.body)
-
-last_name = member_hash['results'][0]['last_name']
-first_name = member_hash['results'][0]['first_name']
-puts last_name +", " + first_name
+# ##################################################
+# member_response = CurbFu.get(:url => 'https://api.propublica.org/congress/v1/members/C001068.json',
+# 					  :headers => {'X-API-Key' => '0G65D2vjkSrMYjh3NQSk9dZ235c2yVZ1gBtxUHVf'})
+# member_hash = JSON.parse(member_response.body)
+#
+# last_name = member_hash['results'][0]['last_name']
+# first_name = member_hash['results'][0]['first_name']
+# puts last_name +", " + first_name
 ##################################################
 #  GET ALL 20 BILLS AND THEN APPEND TO AN ARRAY  #
 ##################################################
