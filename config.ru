@@ -1,2 +1,2 @@
-require './web'
+require './startApp'
 run Sinatra::Application
