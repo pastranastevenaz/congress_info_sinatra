@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'rack/flash/test'
 
 set :public_folder, File.dirname(__FILE__)
 set :root, File.dirname(__FILE__)
