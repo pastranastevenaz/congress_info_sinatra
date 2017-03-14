@@ -14,15 +14,44 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-
+  <link rel="stylesheet" href="/views/stylesheet.css" type="text/css">
+  <script src="https://use.fontawesome.com/0b63b9ae91.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h1>Hello from index</h1>
-    <h3><a href="/current_house">Last 20 Introduced House Bills</a><h3>
-      <!-- <a href="/public/current_house.csv" download>Download file</a> -->
-      <a href="app/house_bills/public/current_house.csv" download>Download file</a>
-
-    <h3><a href="/app/senate_bills/public/current_senate.csv">Laste 20 introduced Senate Bills</a></h3>
+    <div class="jumbotron">
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10">
+          <div id="content-area">
+            <p id="title">Congress Spreadsheets</p>
+            <center>
+            <p id="intro">Greetings friends. This project was put together as a labor of love, my love for the Ruby programming language, and my love for political awareness. In a conversation I had with a friend, I realized there was a need for up to date access to the doings of congress. While that information is currently available online. It is not readily available in spreadsheet format. Please eel free to use these spreadsheets at your convenience. I hope they serve you well. Also, feel free to fork and conrtribute to the project. I would like to still add more spreadsheets, and possibly add some interactivity. </p>
+          </center>
+          <br>
+          <center>
+          <p id="credit" class="left">-Steven Antonio </p>
+          <center>
+            <a class="credit-link" href=""><i class="fa fa-github" aria-hidden="true"></i>github.com/pastranastevenaz/congress_info_sinatra</a>
+             <br><a href="http://stevenanton.io" class="credit-link">www.stevenantonio</a>
+          </center>
+        </center>
+          <hr>
+          <p id="title2">Up to date files</p>
+              <!-- <a href="/public/current_house.csv" download>Download file</a> -->
+            <a class="link" href="https://s3-us-west-1.amazonaws.com/congressinfo/current_house.csv" download>  <i class="fa fa-file-excel-o" aria-hidden="true"></i> Last 20 Introduced House Bills</a>
+            <br>
+            <a class="link" href="https://s3-us-west-1.amazonaws.com/congressinfo/current_senate.csv" download>  <i class="fa fa-file-excel-o" aria-hidden="true"></i> Last 20 Introduced Senate Bills</a>
+            <hr>
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+      </div>
+</div>
   </body>
 </html>
