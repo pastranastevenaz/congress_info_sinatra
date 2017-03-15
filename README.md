@@ -1,7 +1,7 @@
 <html><head><meta charset="utf-8"><title></title><style></style></head><body id="preview">
 <h1><a id="Congress_to_CSV_0"></a>Congress to CSV</h1>
 <h3><a id="Synopsis_3"></a>Synopsis</h3>
-<p>The purpose of this project is to pull the data from the propublica congress API and write to a CSV. The goal is to have a cron job automate the task every day.</p>
+<p>The purpose of this project is to pull the data from the propublica congress API and write to a CSV. The goal is to have a rake task automate the task every day.</p>
 <h3><a id="Tasks_7"></a>Tasks</h3>
 <ul>
 <li><strike>Create Project</strike></li>
@@ -10,15 +10,16 @@
 <li><strike>Connect to API and extract data to file</strike></li>
 <li><strike>Parse data to CSV</strike></li>
 <li><strike>Format CSV data into columns</strike></li>
-<li>Create main script to run other scripts druing cron/scheduled task</li>
+<li><strike>Create main script to run other scripts druing cron/scheduled task</strike></li>
 <li>Populate Sponsor column with Sponsor name, replacing .JSON link</li>
 <li><strike>Add Column headers to CSV file</strike></li>
-<li>Create seperate files for Senate and House</li>
+<li><strike>Create seperate files for Senate and House</strike></li>
 <li>Name output files with date created</li>
-<li>Create cron jobs for creating JSON files</li>
-<li>Create cron jubs for creating CSV files</li>
-<li>Find optimal delivery or download solution (option list below)</li>
-<li>Upload to server</li>
+<li><strike>Create rake task for creating JSON files</strike></li>
+<li><strike>Create rake task for creating CSV files</strike></li>
+<li><strike>Find optimal delivery or download solution (option list below)</strike> Went with AWS S3</li>
+<li><strike>Upload to server</strike></li>
+<li>AWS S3 upload file from heroku fails to run when run from a rake task</li>
 </ul>
 <h5><a id="Delivery_Options_23"></a>Delivery Options</h5>
 <ul>
@@ -35,6 +36,12 @@
 curb-fu | <a href="https://github.com/gdi/curb-fu">https://github.com/gdi/curb-fu</a><br>
 rspec | <a href="https://github.com/rspec/rspec">https://github.com/rspec/rspec</a><br>
 json | <a href="https://github.com/flori/json">https://github.com/flori/json</a></p>
+rake
+thin
+rack
+aws-sdk
+aws
+
 <h3><a id="Motivation_39"></a>Motivation</h3>
 <p>In support of a politically active organization</p>
 <h3><a id="Contributors_44"></a>Contributors</h3>
