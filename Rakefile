@@ -15,4 +15,9 @@ task :main do
   ruby 'app/senate_bills/senate_bills.rb'
 
   ruby 'app/senate_bills/convert_senate_bills.rb'
+
+# THIS FILE FAILS TO EXECUTE PROPERLY WHILE RUN AS A RAKE TASK.
+# NEE TO FIGUREE OUT WHY.
+  # ruby 'app/tasks/aws_connect.rb'
+
 end
