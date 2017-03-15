@@ -20,6 +20,7 @@
 <li><strike>Find optimal delivery or download solution (option list below)</strike> Went with AWS S3</li>
 <li><strike>Upload to server</strike></li>
 <li>AWS S3 upload file from heroku fails to run when run from a rake task</li>
+<li>Need to create a task to precompile static assets</li>
 </ul>
 <h5><a id="Delivery_Options_23"></a>Delivery Options</h5>
 <ul>
