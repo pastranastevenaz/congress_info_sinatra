@@ -1,8 +1,5 @@
 require 'sinatra'
-require 'aws-sdk'
-require 'dotenv'
 
-Dotenv.load
 
 # # S3 settings
 #  s3 = Aws::S3.new(
